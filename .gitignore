@@ -13,6 +13,7 @@ bin/
 .settings
 .classpath
 .project
+.tern-project
 
 # Forge file
 .forge_settings
