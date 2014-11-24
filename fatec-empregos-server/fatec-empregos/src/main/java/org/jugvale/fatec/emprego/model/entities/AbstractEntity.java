@@ -1,6 +1,7 @@
 package org.jugvale.fatec.emprego.model.entities;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
@@ -18,14 +19,36 @@ public class AbstractEntity implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "id", updatable = false, nullable = false)
+	@Column(updatable = false, nullable = false)
 	protected Long id = null;
 
+	@Column(nullable = false)
+	private Boolean ativo;
+	
+	@Column(name = "data_criado", nullable = false)
+	private LocalDateTime dataCriado = LocalDateTime.now();
+	
 	public Long getId() {
 		return id;
 	}
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public Boolean getAtivo() {
+		return ativo;
+	}
+
+	public void setAtivo(Boolean ativo) {
+		this.ativo = ativo;
+	}
+
+	public LocalDateTime getDataCriado() {
+		return dataCriado;
+	}
+
+	public void setDataCriado(LocalDateTime dataCriado) {
+		this.dataCriado = dataCriado;
 	}
 }
