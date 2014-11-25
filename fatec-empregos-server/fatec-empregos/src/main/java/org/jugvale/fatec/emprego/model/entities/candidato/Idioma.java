@@ -1,16 +1,18 @@
+/**
+ * 
+ */
 package org.jugvale.fatec.emprego.model.entities.candidato;
 
 import javax.persistence.Entity;
 
-import org.jugvale.fatec.emprego.model.entities.Usuario;
+import org.jugvale.fatec.emprego.model.entities.EntidadeAbstrata;
 
 /**
  * @author Pedro Hos
  *
  */
-
 @Entity
 @SuppressWarnings("serial")
-public class Candidato extends Usuario {
+public class Idioma extends EntidadeAbstrata {
 
 }

@@ -5,12 +5,17 @@ import javax.persistence.Entity;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import org.jugvale.fatec.emprego.model.entities.AbstractEntity;
+import org.jugvale.fatec.emprego.model.entities.EntidadeAbstrata;
 import org.jugvale.fatec.emprego.model.entities.annotations.Email;
+
+/**
+ * @author Pedro Hos
+ *
+ */
 
 @Entity
 @SuppressWarnings("serial")
-public class Usuario extends AbstractEntity {
+public class Usuario extends EntidadeAbstrata {
 
 	@NotNull(message = "{usuario.nome.nulo}")
 	@Size(max = 45, min = 1, message = "{usuario.nome.tamanho}")

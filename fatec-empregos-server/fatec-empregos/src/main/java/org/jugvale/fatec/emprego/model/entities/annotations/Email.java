@@ -16,6 +16,11 @@ import javax.validation.Payload;
 import javax.validation.ReportAsSingleViolation;
 import javax.validation.constraints.Pattern;
 
+/**
+ * @author Pedro Hos
+ *
+ */
+
 @Documented
 @Constraint(validatedBy = {})
 @Target(value = {METHOD,FIELD, ANNOTATION_TYPE, CONSTRUCTOR, PARAMETER})

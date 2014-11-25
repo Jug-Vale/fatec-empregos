@@ -12,8 +12,9 @@ import javax.persistence.MappedSuperclass;
 /**
  * @author Pedro Hos
  */
+
 @MappedSuperclass
-public class AbstractEntity implements Serializable {
+public class EntidadeAbstrata implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
