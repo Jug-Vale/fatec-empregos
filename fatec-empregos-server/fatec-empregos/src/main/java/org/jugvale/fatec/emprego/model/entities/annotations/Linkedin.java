@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 package org.jugvale.fatec.emprego.model.entities.annotations;
 
 import static java.lang.annotation.ElementType.ANNOTATION_TYPE;
@@ -26,9 +29,9 @@ import javax.validation.constraints.Pattern;
 @Target(value = {METHOD,FIELD, ANNOTATION_TYPE, CONSTRUCTOR, PARAMETER})
 @Retention(RUNTIME)
 @ReportAsSingleViolation
-@Pattern(regexp = "[-0-9a-zA-Z.+_]+@[-0-9a-zA-Z.+_]+\\.[a-zA-Z]{2,4}")
-public @interface Email {
-	String message() default "{email.invalido}";
+@Pattern(regexp = "^(http(s)?:\\/\\/)?([\\w]+\\.)?linkedin\\.com\\/(pub|in|profile)\\/.+")
+public @interface Linkedin {
+	String message() default "{candidato.linkedin.invalido}";
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
 }

@@ -54,6 +54,12 @@
 			<scope>provided</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>org.glassfish.jersey.core</groupId>
+			<artifactId>jersey-client</artifactId>
+			<version>2.13</version>
+		</dependency>
+
 		<!-- Import the JTA API, we use provided scope as the API is included in 
 			JBoss WildFly -->
 		<dependency>
