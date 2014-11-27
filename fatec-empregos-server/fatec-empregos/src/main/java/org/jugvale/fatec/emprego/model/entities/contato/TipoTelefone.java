@@ -6,5 +6,5 @@ package org.jugvale.fatec.emprego.model.entities.contato;
  */
 
 public enum TipoTelefone {
-
+	CELULAR, FAX, RESIDENCIAL, CONTATO;
 }

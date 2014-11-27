@@ -37,6 +37,10 @@ public class Empresa extends Usuario {
 	@NotNull(message = "{empresa.emailParaEnvioCurriculo.nulo}")
 	private String emailParaEnvioCurriculo;
 	
+	@Column(length = 1000)
+	@Size(max = 1000, min = 0, message = "{empresa.descricao.tamanho}")
+	private String descricao;
+	
 	public String getNomeResponsavel() {
 		return nomeResponsavel;
 	}
@@ -84,8 +88,5 @@ public class Empresa extends Usuario {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-
-	@Column(length = 1000)
-	@Size(max = 1000, min = 0, message = "{empresa.descricao.tamanho}")
-	private String descricao;
+	
 }
